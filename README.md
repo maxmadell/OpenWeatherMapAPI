@@ -7,6 +7,14 @@ from [openweathermap.org](http://openweathermap.org/ "OpenWeatherMap.org").
 
 ## API Changes ##
 
+
+### Version 0.0.6 ###
+
+Added methods for searching for cities:
+    - (void) searchingOfCityByCityName;
+    - (void) searchingOfCityByCoordinate;
+    - (void) searchingOfCityByCityId;
+
 ### Version 0.0.5 ###
 
 The methods for getting the daily forecast have changed names. So instead of: `dailyForecastWeatherByCityName:withCount:withCallback:`

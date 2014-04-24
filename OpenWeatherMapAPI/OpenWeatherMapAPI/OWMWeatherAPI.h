@@ -67,4 +67,15 @@ typedef enum {
                            withCount:(int) count
                         andCallback:( void (^)( NSError* error, NSDictionary *result ) )callback;
 
+#pragma mark - find cities
+
+- (void) searchingOfCityByCityName:(NSString *) name
+                      withCallback:( void (^)( NSError* error, NSDictionary *result ) )callback;
+
+- (void) searchingOfCityByCoordinate:(NSString *) name
+                        withCallback:( void (^)( NSError* error, NSDictionary *result ) )callback;
+
+- (void) searchingOfCityByCityId:(NSString *) name
+                    withCallback:( void (^)( NSError* error, NSDictionary *result ) )callback;
+
 @end

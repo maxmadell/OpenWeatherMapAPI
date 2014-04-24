@@ -300,6 +300,25 @@
     [self callMethod:method withCallback:callback];
 }
 
+#pragma mark - find cities
+
+- (void) searchingOfCityByCityName:(NSString *) name
+                      withCallback:( void (^)( NSError* error, NSDictionary *result ) )callback{
+    NSString *method = [NSString stringWithFormat:@"/find?q=%@", name];
+    [self callMethod:method withCallback:callback];
+}
+
+- (void) searchingOfCityByCoordinate:(NSString *) name
+                        withCallback:( void (^)( NSError* error, NSDictionary *result ) )callback{
+    NSString *method = [NSString stringWithFormat:@"/find?q=%@", name];
+    [self callMethod:method withCallback:callback];
+}
+
+- (void) searchingOfCityByCityId:(NSString *) name
+                    withCallback:( void (^)( NSError* error, NSDictionary *result ) )callback{
+    NSString *method = [NSString stringWithFormat:@"/find?q=%@", name];
+    [self callMethod:method withCallback:callback];
+}
 
 
 @end
